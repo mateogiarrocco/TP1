@@ -107,29 +107,3 @@ void free_strv(char *strv[]){
 	for(int i = 0; strv[i]; i++) free(strv[i]);
 	free(strv);
 }
-
-/*int main(){
-	char cadena[] = "ejemplo"; 
-	printf("La cadena es: [%s]\n", cadena);
-	//........................substr................................
-	char* result = substr(cadena + 4, 2);
-	printf("result es '%s'---------------------------------\n", result);
-	free(result);
-
-	//........................split.................................
-	printf("SPLIT\n");
-	char** str_dinamico = split("abc,def", ',');
-	for(int i = 0; i < 3; i ++)
-	printf("str_dinamico[%i] es '%s'\n",i,str_dinamico[i]);
-	printf("-------------------\n");
-	//free_strv(str_dinamico);
-	
-	//.........................join.................................
-	printf("JOIN\n");
-	char* result_join = join(str_dinamico,'\0');
-	printf("join: '%s'\n",result_join);
-	free_strv(str_dinamico);
-	free(result_join);
-	//free(cadena);
-	return 0;
-}*/
